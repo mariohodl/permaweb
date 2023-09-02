@@ -1,0 +1,235 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="Cache-Control" content="no-cache">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <style>
+        * {
+          user-select: none;
+        }
+        body{
+          background-color: #f5983b;
+        }
+        body {
+  --s: 67px; /* shape size */
+  --m: 4px; /* line thickness */
+
+  --v1: #fff 119.5deg, #0000 120.5deg;
+  --v2: #000 119.5deg, #0000 120.5deg;
+  background: conic-gradient(
+      at var(--m) calc(var(--s) * 0.5777),
+      transparent 270deg,
+      #000 0deg
+    ),
+    conic-gradient(
+      at calc(100% - var(--m)) calc(var(--s) * 0.5777),
+      #000 90deg,
+      transparent 0deg
+    ),
+    conic-gradient(from -60deg at 50% calc(var(--s) * 0.8662), var(--v1)),
+    conic-gradient(
+      from -60deg at 50% calc(var(--s) * 0.8662 + 2 * var(--m)),
+      var(--v2)
+    ),
+    conic-gradient(
+      from 120deg at 50% calc(var(--s) * 1.4435 + 3 * var(--m)),
+      var(--v1)
+    ),
+    conic-gradient(
+      from 120deg at 50% calc(var(--s) * 1.4435 + var(--m)),
+      var(--v2)
+    ),
+    linear-gradient(
+      90deg,
+      #fff calc(50% - var(--m)),
+      #000 0 calc(50% + var(--m)),
+      #fff 0
+    );
+  background-size: calc(var(--s) + 2 * var(--m))
+    calc(var(--s) * 1.732 + 3 * var(--m));
+  mix-blend-mode: lighten;
+}
+html:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, red, blue, green) left/400% 100%;
+  animation: f 2s infinite alternate linear;
+}
+
+@keyframes f {
+  100% {
+    background-position: right;
+  }
+}
+
+        .flex {
+          display: flex !important;
+        }
+        .flex-between {
+          justify-content: space-between;
+        }
+        .flex-column {
+          flex-direction: column;
+        }
+        .flex-center {
+          justify-content: center;
+        }
+      
+       
+        .flex-middle {
+          align-items: center;
+        }
+        
+      
+        .flex-wrap {
+          flex-wrap: wrap;
+        }
+
+        .info{
+          max-width: 780px;
+          margin: 0 auto;
+        }
+
+
+        .logo img{
+          width: 150px;
+          height: 150px;
+          border-radius:50%;
+          border: 2px solid #e5d7d7;
+          margin-top:50px;
+          margin-bottom:20px;
+          background-color: #000000;
+        }
+
+        .logo-btc{
+          width: 45px;
+          height: 45px;
+          margin: 0;
+        }
+
+        .logo-btc img{
+          width: 100%;
+          height: 100%;
+          box-shadow: 0 0 10px #000;
+          border-radius: 50%;
+        }
+
+        .title{
+          font-size: 40px;
+        }
+
+        .white{
+          color: white;
+        }
+
+        .yellow{
+          color: #f8a218;
+        }
+
+        .gray{
+          color: #837f7f;
+        }
+
+        .font22{
+          font-size: 22px;
+        }
+
+        .font25{
+          font-size: 25px;
+        }
+
+        .center{
+          text-align: center;
+        }
+
+        .margin0{
+          margin:0;
+        }
+
+        .margin10{
+          margin:10px;
+        }
+        .bitcoin-summer .bitcoin{
+          background-color: #fff;
+          width: 200px;
+          height: 45px;
+          color: black;
+          border-radius: 40px;
+          margin-bottom: 5px;
+
+        }
+        .bitcoin-summer .bitcoin .text{
+          font-size: 30px;
+          color: black;
+          font-family:  sans-serif;
+          margin:0;
+        }
+        .bitcoin-summer .summer .text{
+          font-size: 29px;
+          color: white;
+          font-family:  sans-serif;
+          margin:0;
+        }
+
+        .sponsors{
+          color:white;
+          font-size: 27px;
+          margin-top: 30px;
+        }
+
+        .sponsors-item{
+          margin-right: 50px;
+        }
+
+        .sponsors-item:last-child{
+          margin-right: 0px;
+        }
+      </style>
+    
+    </head>
+    <body>
+      <div>
+        <div class="logo flex flex-center">
+          <img src="https://pbs.twimg.com/profile_images/1489451738138558464/Y2YJe--7_400x400.jpg" alt="">
+        </div>
+
+        <div class="info">
+          <h2 class="title white center margin10">Mario Hodl legacy</h2>
+          <div class="flex flex-center">
+            <div class="logo-btc margin10">
+              <!-- update this with a recursive inscription of the logo: ord-id=6a9f5e27007e74d739435b9cebac0be1a0aed15fe1dcc63701a70ecd131fb503i0 -->
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/800px-Bitcoin.svg.png" alt="">
+            </div>
+          </div>
+            
+          <p class="center font25 white margin10"><em>"Soy una persona super extrovertida que siempre está en busca de nuevas aventuras. Amante de Bitcoin y criptografía, y un poco de la naciente Inteligencia artificial. Búscame en mis redes para conectar con alguien que siempre está dispuesto a aprender algo nuevo."</em></p>
+        </div>
+
+        <div>
+          <h3 class="center gray font22">Powered by:</h3>
+        </div>
+
+        <div class="bitcoin-summer flex flex-center flex-middle flex-column">
+          <div class="bitcoin flex flex-center flex-middle">
+            <h2 class="text">Bitcoin</h2>
+          </div>
+          <div class="summer"><h2 class="text">Summer</h2></div>
+        </div>
+
+
+        <div class="sponsors flex flex-center">
+            <div class="flex">
+                <li class="sponsors-item">CryptoCash</li>
+                <li class="sponsors-item">Mr.Coin</li>
+                <li class="sponsors-item">Binance</li>
+                <li class="sponsors-item">Neefter</li>
+            </div>
+        </div>
+
+
+      </div>
+      
+    </body>
+  </html>
+  
